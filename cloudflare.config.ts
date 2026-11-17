@@ -1,5 +1,5 @@
-import { bindings, defineConfig, defineWorker } from "cf/config";
 import { createWorkersResponseStoreServiceBindingConfig } from "@vinext/cloudflare/cache/config";
+import { bindings, defineConfig, defineWorker } from "cf/config";
 
 const responseStore = await createWorkersResponseStoreServiceBindingConfig({
     worker: {
@@ -14,7 +14,9 @@ export const responseStoreServiceBinding = responseStore.serviceBindingWorker;
 export default defineConfig({
     worker: defineWorker({
         ...responseStore.applicationWorker,
-        name: "website",
+        name: "candyriyamc",
+        workersDev: false,
+        previewUrls: false,
         entrypoint: "vinext/server/fetch-handler",
         compatibilityDate: "2026-11-17",
         assets: {
