@@ -29,5 +29,16 @@ export default defineConfig({
             ASSETS: bindings.assets(),
             IMAGES: bindings.images(),
         },
+        observability: {
+            issues: {
+                enabled: true,
+            },
+            logs: {
+                enabled: true,
+            },
+            traces: {
+                enabled: true,
+            },
+        },
     }),
 });
