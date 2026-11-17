@@ -34,6 +34,7 @@
         "@vitejs/plugin-rsc": "^0.5.39",
         "babel-plugin-react-compiler": "1.0.0",
         "cf": "^1.0.0-rc.1",
+        "oxc-transform-react": "^0.158.0",
         "tailwindcss": "^4",
         "typescript": "^5",
         "vite": "8.3.0"
